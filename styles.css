@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f5f1e9; /* Beige background */
     color: #333; /* Dark text */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 h1, h2, h3 {
@@ -38,10 +39,27 @@ button, .button {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: inline-block; /* Make buttons inline */
 }
 
 button:hover, .button:hover {
     background-color: #8c5d23; /* Darker bronze on hover */
+}
+
+/* Full-Page Sections */
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Center content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
 }
 
 /* Header */
@@ -69,7 +87,6 @@ header .button {
 /* About Section */
 #about {
     padding: 60px 20px;
-    text-align: center;
 }
 
 #about h2 {
@@ -86,8 +103,6 @@ header .button {
 
 /* Project Gallery Section */
 #projects {
-    padding: 60px 20px;
-    text-align: center;
     background-color: #fff; /* White background for contrast */
 }
 
@@ -106,6 +121,7 @@ header .button {
     padding: 20px;
     border: 1px solid #dcdcdc;
     border-radius: 8px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -117,8 +133,6 @@ header .button {
 /* Contact Section */
 #contact {
     padding: 60px 20px;
-    text-align: center;
-    background-color: #f5f1e9;
 }
 
 #contact h2 {
