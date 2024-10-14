@@ -10,7 +10,7 @@ body {
 
 h1 {
     font-weight: 600;
-    color: #FFFFFF; /* Deep Black */
+    color: #FFFFFF;
 }
 
 h2, h3 {
@@ -45,10 +45,6 @@ button, .button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-block; /* Make buttons inline */
-}
-
-button:hover, .button:hover {
-    background-color: #8c5d23; /* Darker bronze on hover */
 }
 
 /* Full-Page Sections */
@@ -117,8 +113,9 @@ header .button {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 20px;
+    padding: 0 20px;
 }
 
 .project {
@@ -128,6 +125,17 @@ header .button {
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Spacing between image and text */
 }
 
 .project:hover {
@@ -167,6 +175,6 @@ footer {
     }
 
     #projects .project-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Stack on smaller screens */
     }
 }
