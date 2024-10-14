@@ -41,33 +41,33 @@
     <section id="projects">
         <h2>Project Gallery</h2>
         <div class="project-grid">
-            <div class="project">
-                <h3>Pantograph Detection Model</h3>
-            </div>
-            <div class="project">
-                <h3>KickBidder - Football Auction Bot</h3>
-            </div>
-            <div class="project">
-                <h3>Phonexa - Translation App</h3>
-            </div>
-            <div class="project">
-                <h3>Coconut Detection Model</h3>
-            </div>
-            <div class="project">
-                <h3>Bus Reservation System</h3>
-            </div>
-            <div class="project">
-                <h3>Mental Health Chatbot</h3>
-            </div>
-            <div class="project">
-                <h3>Personal Expense Tracker</h3>
-            </div>
-            <div class="project">
-                <h3>WaterBnB - Decentralized Airbnb</h3>
-            </div>
-            <div class="project">
-                <h3>Anti-Theft Tracker (Arduino)</h3>
-            </div>
+            <a href="https://github.com/abioticgenius/Pantograph_Detection" target="_blank" class="project button">
+                Pantograph Detection Model
+            </a>
+            <a href="https://github.com/abioticgenius/KickBidder" target="_blank" class="project button">
+                KickBidder - Football Auction Bot
+            </a>
+            <a href="https://github.com/abioticgenius/Phonexa" target="_blank" class="project button">
+                Phonexa - Translation App
+            </a>
+            <a href="https://github.com/abioticgenius/Coconut_Detection_Model" target="_blank" class="project button">
+                Coconut Detection Model
+            </a>
+            <a href="https://github.com/abioticgenius/Bus_Reservation_System" target="_blank" class="project button">
+                Bus Reservation System
+            </a>
+            <a href="https://github.com/abioticgenius/Chat_App" target="_blank" class="project button">
+                Mental Health Chatbot
+            </a>
+            <a href="https://github.com/abioticgenius/personal-expense-tracker" target="_blank" class="project button">
+                Personal Expense Tracker
+            </a>
+            <a href="https://github.com/imusriram/waterbnb" target="_blank" class="project button">
+                WaterBnB - Decentralized Airbnb
+            </a>
+            <a href="https://github.com/abioticgenius/Anti-Theft-Tracker" target="_blank" class="project button">
+                Anti-Theft Tracker (Arduino)
+            </a>
         </div>
     </section>
 
@@ -84,5 +84,19 @@
         <p>&copy; 2024 Roshan Prakash. All rights reserved.</p>
     </footer>
 
+    <script>
+        // Smooth scrolling and animations
+        window.addEventListener('scroll', function() {
+            var sections = document.querySelectorAll('section');
+            var scrollPosition = window.pageYOffset;
+
+            sections.forEach(function(section) {
+                var sectionTop = section.offsetTop;
+                if (scrollPosition + window.innerHeight > sectionTop + 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
